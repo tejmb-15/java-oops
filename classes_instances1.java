@@ -1,4 +1,5 @@
 https://www3.ntu.edu.sg/home/ehchua/programming/java/images/ExerciseOOP_Circle_Final.png
+
 /******************************************************************************
 
 Welcome to GDB Online.
@@ -43,6 +44,9 @@ class Circle{
     public double Circumference(){
         return Math.PI*radius*radius;
     }
+    public String toString(){
+        return radius+" "+color;
+    }
 }
 public class Main{
 public static void main(String args[]){
@@ -51,7 +55,9 @@ public static void main(String args[]){
         Circle c2= new Circle(3.0,"yellow");
         c1.setColor("green");
         c2.setRadius(6.0);
-
+System.out.println(c.toString());
+System.out.println(c1.toString());
+System.out.println(c2.toString());
    System.out.println(c.getArea());
     System.out.println(c.Circumference());
      System.out.println(c1.getArea());
@@ -60,5 +66,6 @@ public static void main(String args[]){
     System.out.println(c2.Circumference());
      System.out.println(c1.getColor());
     System.out.print(c2.getRadius());
+    
 }
 }
